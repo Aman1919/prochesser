@@ -35,7 +35,7 @@ export async function EmailVerification(email: string, name: string) {
       subject: "Email Verification for Your ProChesser Account",
       html: `<p>Dear ${name}</p>
       <p>Thank you for visiting ProChesser! We noticed that you recently entered your email address on our website. To ensure the security of your account and enhance your experience with us, please verify your email by clicking the link below:</p>
-      <a href="${BACKEND_URL}/${BACKEND_ROUTE}/auth/verify/${token}">Verify Your Email</a>
+      <a href="${BACKEND_URL}/auth/verify/${token}">Verify Your Email</a>
       <p>If you have any questions or need assistance, feel free to reach out to our support team at support@prochessser.com<p>
       <p>Thank you for choosing ProChesser!</p>
       <p>Sincerely,</p>
